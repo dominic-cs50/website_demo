@@ -33,9 +33,9 @@
 
 	// Nav.
 
-		// Title Bar.
+		// Button.
 			$(
-				'<div id="titleBar">' +
+				'<div id="navButton">' +
 					'<a href="#navPanel" class="toggle"></a>' +
 				'</div>'
 			)
@@ -45,6 +45,7 @@
 			$(
 				'<div id="navPanel">' +
 					'<nav>' +
+						'<a href="index.html" class="link depth-0">Home</a>' +
 						$('#nav').navList() +
 					'</nav>' +
 				'</div>'
@@ -53,12 +54,10 @@
 				.panel({
 					delay: 500,
 					hideOnClick: true,
-					hideOnSwipe: true,
 					resetScroll: true,
 					resetForms: true,
-					side: 'left',
+					side: 'top',
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
-
 })(jQuery);
